@@ -3,9 +3,9 @@
 Cloning Youtube
 
 - [ ] Home
-- [ ] Search
-- [ ] Join
-- [ ] Login
+- [x] Search
+- [x] Join
+- [x] Login
 - [ ] User Detail
 - [ ] Edit Profile
 - [ ] Change Password
