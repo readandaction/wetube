@@ -13,10 +13,10 @@ export const search = (req, res) => {
 };
 
 export const upload = (req, res) =>
-  res.render("Upload", { pageTitle: "Upload" });
+  res.render("upload", { pageTitle: "Upload" });
 export const videoDetail = (req, res) =>
-  res.render("Video-detail", { pageTitle: "Video detail" });
+  res.render("videoDetail", { pageTitle: "Video detail" });
 export const editVideo = (req, res) =>
-  res.render("Edit-video", { pageTitle: "Edit video" });
+  res.render("editVideo", { pageTitle: "Edit video" });
 export const deleteVideo = (req, res) =>
-  res.render("Delete-video", { pageTitle: "Delete Video" });
+  res.render("deleteVideo", { pageTitle: "Delete Video" });
