@@ -4,7 +4,8 @@ export const videos = [
     title: "project 1",
     description: "One",
     views: 24,
-    videoFile: "",
+    videoFile:
+      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
     creator: {
       id: 1212,
       name: "chan",
@@ -16,7 +17,8 @@ export const videos = [
     title: "project 1",
     description: "One",
     views: 24,
-    videoFile: "",
+    videoFile:
+      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
     creator: {
       id: 1212,
       name: "chan",
@@ -28,7 +30,8 @@ export const videos = [
     title: "project 1",
     description: "One",
     views: 24,
-    videoFile: "",
+    videoFile:
+      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
     creator: {
       id: 1212,
       name: "chan",
