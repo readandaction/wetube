@@ -29,11 +29,9 @@ export const postUpload = async (req, res) => {
   const newVideo = await Video.create({
     fileUrl: path,
     title,
-    desciption
+    description
   });
-  console.log(newVideo);
   res.redirect(routes.videoDetail(newVideo.id));
-  // To Do : Upload and Save
 };
 
 export const videoDetail = (req, res) =>
