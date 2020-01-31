@@ -3,12 +3,14 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-import { localsMiddleware } from "./middleWares";
+import passport from "passport";
+import { localsMiddleware } from "./middlewares";
 import routes from "./routes";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
 
+import "./passport";
 const app = express();
 
 app.use(helmet());
@@ -20,6 +22,8 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(morgan("dev"));
+app.use(passport.initialize());
+app.use(passport.session());
 // "/"는 홈을 의미
 // middleware 사용법 중 첫번째
 //app.get("/", betweenHome, handleHome);
