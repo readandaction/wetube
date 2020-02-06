@@ -67,12 +67,12 @@ export const postJoin = async (req, res, next) => {
   }
 };
 
-export const me = (req, res) => {
-  res.render("userDetail", { pageTitle: "User Detail", user: req.user });
-};
-
 export const users = (req, res) =>
   res.render("users", { pageTitle: "User Detail" });
+
+export const getMe = (req, res) => {
+  res.render("userDetail", { pageTitle: "User Detail", user: req.user });
+};
 export const userDetail = (req, res) => res.render("userDetail");
 export const editProfile = (req, res) =>
   res.render("editProfile", { pageTitle: "Edit Profile" });
